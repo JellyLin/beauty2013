@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      飛上資頭變美女 輔大資工週 資訊博覽會暨校園美女選拔
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2013 輔大資工週美少女 ">
+    <meta name="author" content="NISRA SPECIAL FORCE">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    
+  </head>
+  
+  <body tabindex="0">
+	<div id="fb-root"></div>
+	<script>
+	  window.fbAsyncInit = function() {
+	  FB.init({
+		appId      : '179882558834566', // App ID
+		channelUrl : '//bz.weco.net/channel.html', // Channel File
+		status     : true, // check login status
+		cookie     : true, // enable cookies to allow the server to access the session
+		xfbml      : true  // parse XFBML
+	  });
+	
+	  // Here we subscribe to the auth.authResponseChange JavaScript event. This event is fired
+	  // for any auth related change, such as login, logout or session refresh. This means that
+	  // whenever someone who was previously logged out tries to log in again, the correct case below 
+	  // will be handled. 
+	  FB.Event.subscribe('auth.authResponseChange', function(response) {
+		// Here we specify what we do with the response anytime this event occurs. 
+		if (response.status === 'connected') {
+		  // The response object is returned with a status field that lets the app know the current
+		  // login status of the person. In this case, we're handling the situation where they 
+		  // have logged in to the app.
+		  testAPI();
+		} else if (response.status === 'not_authorized') {
+		  
+		  FB.login();
+		} else {
+		  // In this case, the person is not logged into Facebook, so we call the login() 
+		  // function to prompt them to do so. Note that at this stage there is no indication
+		  // of whether they are logged into the app. If they aren't then they'll see the Login
+		  // dialog right after they log in to Facebook. 
+		  // The same caveats as above apply to the FB.login() call here.
+		  FB.login();
+		}
+	  });
+	  };
+
+	  // Load the SDK asynchronously
+	  (function(d){
+	   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+	   if (d.getElementById(id)) {return;}
+	   js = d.createElement('script'); js.id = id; js.async = true;
+	   js.src = "//connect.facebook.net/en_US/all.js";
+	   ref.parentNode.insertBefore(js, ref);
+	  }(document));
+
+	  // Here we run a very simple test of the Graph API after login is successful. 
+	  // This testAPI() function is only called in those cases. 
+	  function testAPI() {
+		console.log('Welcome!  Fetching your information.... ');
+		FB.api('/me', function(response) {
+		  console.log('Good to see you, ' + response.name + '.');
+		});
+	  }
+	</script>
+	<!--Below we include the Login Button social plugin. This button uses the JavaScript SDK to-->
+	<!--present a graphical Login button that triggers the FB.login() function when clicked.-->
+	<!--
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+	-->
+  	<div class="container">
+	  	<div class="top toScroll">
+	  		<div class="navbar ct2">
+			  <div class="navbar-inner">
+			    <a class="brand" href="#">2013 輔大資工週美少女</a>
+			    <ul class="nav">
+			      <li><a href="#">活動介紹</a></li>
+			      <li><a href="#">投票！</a></li>
+			      <li><a href="#">贊助商</a></li>
+			    </ul>
+			  </div>
+			</div>
+
+	  		<section class="header">
+	  			<h1 id="title" class="ct1"><p>飛上資頭變美女</p><p>輔大資工週</br>
+資訊博覽會暨校園美女選拔</p></h1>
+	  			<div class="logo">
+	  			</div>
+	  		</section>
+	  		<div class="pattern"></div>
+	  	</div>
+	    <div class="content">
+
+	    	<section class="secondVoteLoading toScroll">
+	    		<div class="nowloading">... now loading</div>
+	    	</section>
+	    	<section class="secondVote toScroll" style="display:none">
+	    		<h2 class="ct1" style="color:#D0104C;">★投票區★<small style="font-size:26px;color:#333333" class="ct3"> 線上投票已經結束！ 5/24中午 輔大中美堂前廣場見！</small></h2>
+	    		<div class="slider_area ct3">
+	    			<div id="slider" class="swipe">
+	    				<div class="swipe-wrap">
+		    				<div class="slided slide1" style="background:no-repeat url(img/test_bg0.jpg) center center;background-size: 100%">
+		    					<div class="main-pic"><div class="main-pic-closebtn">X</div></div>
+		    					<div class="main-video">
+									<iframe width="560" height="315" src="http://www.youtube.com/embed/mkKV99dvOa8?html5=1" frameborder="0" allowfullscreen></iframe>
+		    					</div>
+		    					<div class="main-intro">
+		    						<div>
+		    							<h2></br>吳欣恬     <small>Mozilla 代表</small></h2>
+		    						</br>
+		    							嗨！大家好！</br>
+我的名字叫做吳欣恬〜叫我欣恬就可以了！^_^</br>
+我是個陽光的女孩，從小就熱愛運動！</br>
+夢想之一就是能成為一位隨時能擺出甜美姿勢的模特兒！</br>
+很感謝資工美少女的活動，讓我能有個舞台展現自我！</br>
+我會很努力的表演！讓大家看見我的熱情〜</br>
+第一次參加這樣的活動，請大家多多包含我的不足！</br>
+請投我一票，謝謝大家</br>
+</br>
+現在票數：<span class="tickets">816票</sapn></br><a class="vote_btn btn btn-danger" href="#">投票</a> 	
+		    						</div>
+		    					</div>
+		    					<div class="main-pic-nav">
+			    					<img src="http://i.minus.com/ibrxUNISeudvrz.jpg"></img>
+			    					<img src="http://i.minus.com/ibk5KlKVt3xjPA.jpg"></img>
+			    					<img src="http://i.minus.com/ibspPnHTDjRom4.jpg"></img>
+			    					<img src="http://i.minus.com/iblHB7f6dY8IqV.jpg"></img>
+			    					<img src="http://i.minus.com/iLx9WO3In2Tix.jpg"></img>
+			    				</div>
+		    				</div>
+		    				<div class="slided slide2" style="background:no-repeat url(http://i.minus.com/jQJJDd3qLnffH.JPG) center center;background-size: 100%">
+								<div class="main-pic"><div class="main-pic-closebtn">X</div></div>
+		    					<div class="main-video">
+									<iframe width="560" height="315" src="http://www.youtube.com/embed/yRN1q6uFXRQ?html5=1" frameborder="0" allowfullscreen></iframe>
+		    					</div>
+		    					<div class="main-intro">
+		    						<div>
+		    							<h2>大寶</br>吳欣芸     <small>Garena 代表</small></h2>
+		    						
+		    							哈囉大家好！</br>
+我是目前就讀兒童與家庭學系的吳欣芸，大寶:)</br>
+平時喜歡跑步、打排球及聽音樂。很高興能參與資工系所舉辦的「飛上資頭變美女」，並獲得代言Garena的機會！</br>
+你/妳有玩過LOL嗎？有的話，那你/妳一定知道Garena，沒有的話，也沒關係！</br>
+歡迎大家在5/20-5/24到資工周活動現場，地點在中美堂前廣場，來找我認識Garena及體驗Mstar唷！</br>
+另外，第二階段資工美少女選拔開始囉！分為網路和現場投票，現場憑學生證投票還有機會抽大獎唷～
+請大家多多支持！投我一票唷:)</br>
+謝謝大家:)</br>
+</br>
+現在票數：<span class="tickets">1118</span>票</br><a class="vote_btn btn btn-danger" href="#">投票</a> 	
+		    						</div>
+		    					</div>
+		    					<div class="main-pic-nav">
+			    					<img src="http://i.minus.com/iKpuZAnCpZECL.jpg"></img>
+			    					<img src="http://i.minus.com/iYpDUubhS5g58.jpg"></img>
+			    					<img src="http://i.minus.com/ibdrcpUJXf7NQO.jpg"></img>
+			    					<img src="http://i.minus.com/iHLVMSYuruwXs.jpg"></img>
+			    					<img src="http://i.minus.com/ik1uDFM0YkkU1.jpg"></img>
+			    				</div>
+		    				</div>
+		    				<div class="slided slide3" style="background:no-repeat url(http://i.minus.com/jbfJZBYgPAlq3V.JPG) center center;background-size: 100%">
+								<div class="main-pic"><div class="main-pic-closebtn">X</div></div>
+		    					<div class="main-video">
+									<iframe width="560" height="315" src="http://www.youtube.com/embed/WkNB9V2PBdg?html5=1" frameborder="0" allowfullscreen></iframe>
+		    					</div>
+		    					<div class="main-intro">
+		    						<div>
+		    							<h2>Angie</br>萬文琪     <small>GIGABYTE 代表</small></h2>
+		    						
+		    							大家好!我是輔仁大學織品服裝學系學生Angie!好榮幸能獲選參與資工美少女活動，都要感謝大家的幫忙與支持唷！雖然所讀的東西與資訊科技沒有最直接的關連，但未來社會是需要能掌握多領域並活用才能更上層樓。我喜愛音樂,電影,小說還有跳舞,我也是ㄧ個活潑外向又用生命熱愛與人聊天的人喔～你們相信與人互動能使彼此獲得更多前所未有嗎？最後請大家大力支持資工週活動並把神聖的ㄧ票投給我喔！＝）
+</br>
+現在票數：<span class="tickets">370票</span></br><a class="vote_btn btn btn-danger" href="#">投票</a> 	
+		    						</div>
+		    					</div>
+		    					<div class="main-pic-nav">
+			    					<img src="http://i.minus.com/ibbaOhCn7zZrQd.jpg"></img>
+			    					<img src="http://i.minus.com/iI8zxNSXUYCAL.jpg"></img>
+			    					<img src="http://i.minus.com/ixcG3CLwFkwmp.jpg"></img>
+			    					<img src="http://i.minus.com/ibq2MARQrEsRgd.jpg"></img>
+			    					<img src="http://i.minus.com/iWA0zilK0GoCc.jpg"></img>
+			    				</div>
+		    				</div>
+		    				<div class="slided slide4" style="background:no-repeat url(http://i.minus.com/jYO7D283Dkvwm.JPG) center center;background-size: 100%">
+		    					<div class="main-pic"><div class="main-pic-closebtn">X</div></div>
+		    					<div class="main-video">
+									<iframe width="560" height="315" src="http://www.youtube.com/embed/hk5HwgPcDYA?html5=1" frameborder="0" allowfullscreen></iframe>
+		    					</div>
+		    					<div class="main-intro">
+		    						<div>
+		    							<h2></br>平雨晨     <small>NOVA 代表</small></h2>
+		    						大家好～我是NOVA美少女平雨晨*現在就讀中文系，而除了母語中文以外，我的第二語言是韓文，在這裡也用韓文向大家問個好。안녕하세요~우신입니다^^ 中文，韓文之外，日文也可以通，語言是興趣也是我的專長＊ 喜歡文學，戲劇，一切美好事物，它們是我每天的必需品和營養劑* 資工週現場投我票會有好運拿大獎♡網路投票也請一定關照，期待5/20~24與大家見面<3<3<3</br>
+</br>
+現在票數：<span class="tickets">296</span>票</br><a class="vote_btn btn btn-danger" href="#">投票</a> 	
+		    						</div>
+		    					</div>
+		    					<div class="main-pic-nav">
+			    					<img src="http://i5.minus.com/jB2Xic5WTnzEk.jpg"></img>
+			    					<img src="http://i.minus.com/i2AenH6KoE6My.jpg"></img>
+			    					<img src="http://i.minus.com/iOuUoJfvRXZil.jpg"></img>
+			    					<img src="http://i6.minus.com/iAIyiekcN0EwK.jpg"></img>
+			    					<img src="http://i.minus.com/iEfBEb8YvmMXG.jpg"></img>
+			    				</div>
+		    				</div>
+		    				<div class="slided slide5" style="background:no-repeat url(http://i.minus.com/jAJ6Xn2qdiLHj.JPG) center center;background-size: 100%">
+		    					<div class="main-pic"><div class="main-pic-closebtn">X</div></div>
+		    					<div class="main-video">
+									<iframe width="560" height="315" src="http://www.youtube.com/embed/LzzBW1slkAk?html5=1" frameborder="0" allowfullscreen></iframe>
+		    					</div>
+		    					<div class="main-intro">
+		    						<div>
+		    							<h2></br>黃宇禎     <small>Acer 代表</small></h2>
+		    			大家好我叫黃宇禎，我是輔大宗教系的學生輔修英文系，從小就熱愛英文，小時候出過國遊學，喜歡嘗試學習各種才藝，積極參與社會各項活動，很喜歡幫助別人，雖不敢說自己已收獲了累累碩果，但是自信心絕對還是不會輸給別人。
+不要看我小小一隻，我責任心強，勤懇踏實，能享樂耐勞，很勇於挑戰各種難關，喜歡簡不複雜。希望透過短短的自我介紹大家都能夠進一步認識我喔！
+</br>
+現在票數：<span class="tickets">1162</span>票</br><a class="vote_btn btn btn-danger" href="#">投票</a> 	
+		    						</div>
+		    					</div>
+		    					<div class="main-pic-nav">
+			    					<img src="http://i.minus.com/iF9zpNDA0V21i.jpg"></img>
+			    					<img src="http://i.minus.com/ijqtftDGtcqGd.jpg"></img>
+			    					<img src="http://i.minus.com/iLNU11sAGKzUw.jpg"></img>
+			    					<img src="http://i.minus.com/ibeJVStZMLgaac.jpg"></img>
+			    					<img src="http://i.minus.com/iV0JWjkJeBjzu.jpg"></img>
+			    				</div>
+		    				</div>
+		    				<div class="slided slide6" style="background:no-repeat url(http://i.minus.com/jW1sFaXgtkmgJ.JPG) center center;background-size: 100%">
+		    					<div class="main-pic"><div class="main-pic-closebtn">X</div></div>
+		    					<div class="main-video">
+									<iframe width="560" height="315" src="http://www.youtube.com/embed/K8lIT0GNP2A?html5=1" frameborder="0" allowfullscreen></iframe>
+		    					</div>
+		    					<div class="main-intro">
+		    						<div>
+		    							<h2>香兒</br>陳姿穎     <small>SanDisk 代表</small></h2>
+		    	hi hi !我叫香兒來自大傳系，很高興有大家讚讚讓我幸運的繼續資工美少女複賽喔！真的非常開心謝謝有你們支持:D</br>
+從北士商到輔大大傳雙主修哲學，一直都帶著追求自己夢想的熱情，每年計劃到一個國家展開一個人的自助旅行，</br>
+喜歡途中不一樣的人事物，感受一個城市的呼吸，總是覺得新鮮事物很適合待在香腦記憶體！除了這些，在輔大校園喜歡中午去健身房後到圖書館吹涼涼的冷氣，會借一堆自己想要看的書或雜誌一次看完後還，通常還書借書的時候都會後悔太重哈哈...我是個會對自己誠實又會努力堅持並且把百分百的心都盡力放出來的女生！ 我是香香 ！謝謝你們看完我打的自我介紹：）謝謝</br>
+
+</br>
+現在票數：<span class="tickets">435</span>票</br><a class="vote_btn btn btn-danger" href="#">投票</a> 	
+		    						</div>
+		    					</div>
+		    					<div class="main-pic-nav">
+			    					<img src="http://i.minus.com/iDy0HxAKUu8Lf.jpg"></img>
+			    					<img src="http://i.minus.com/iboFRLccPOEmL6.jpg"></img>
+			    					<img src="http://i.minus.com/ixRN4CikLVRd9.jpg"></img>
+			    					<img src="http://i.minus.com/iW7yxsRIZLKx9.jpg"></img>
+			    					<img src="http://i.minus.com/ibs14Qm1Mc4coV.jpg"></img>
+			    				</div>
+		    				</div>
+		    				<div class="slided slide_menu" style="background: white;">
+		    					<div class="pic_menu" style="background-image:url(http://i.minus.com/iblUse5F3vWY7u.jpg);">
+		    						<p>票數：816</p></div>
+		    					<div class="pic_menu" style="background-image:url(http://i.minus.com/iUmGloTNWVLwc.jpg);"><p>票數：1118</p></div>
+		    					<div class="pic_menu" style="background-image:url(http://i.minus.com/jbzYn2zOWBjDra.JPG);"><p>票數：370</p></div>
+		    					<div class="pic_menu" style="background-image:url(http://i.minus.com/iepKjYCZJhaOh.jpg);"><p>票數：296</p></div>
+		    					<div class="pic_menu" style="background-image:url(http://i.minus.com/iAaeWpOzs551.jpg);"><p>票數：1162</p></div>
+		    					<div class="pic_menu" style="background-image:url(http://i.minus.com/iVBZf8NhfvDdB.jpg);"><p>票數：435</p></div>
+		    				</div>
+	    				</div>
+	    				<ul class="swipe-nav">
+	    					<li>&lt;BACK</li><li>|</li>
+	    					<li>NEXT&gt;</li>
+	    				</ul>
+	    			</div>
+		    		<ul class="chooser">
+		    			<li class="cand" style="background-image:url(img/2c1.png)"><div></div></li>
+		    			<li class="cand" style="background-image:url(img/2c2.png)"><div></div></li>
+		    			<li class="cand" style="background-image:url(img/2c3.png)"><div></div></li>
+		    			<li class="cand" style="background-image:url(img/2c4.png)"><div></div></li>
+		    			<li class="cand" style="background-image:url(img/2c5.png)"><div></div></li>
+		    			<li class="cand" style="background-image:url(img/2c6.png)"><div></div></li>
+		    		</ul>
+	    		</div>
+
+	    	</section>
+	    	
+	    		<div style="padding-left: 80px;
+padding-bottom: 10px;">點選各位美少女瀏覽介紹，然後投他一票！</div>
+	    	
+	    	<section class="introduction toScroll">
+	    		<h3 class="ct1">★活動介紹★</h3>
+	    		<div class="texts">
+		    		<img id="intro_pic" src="http://i.minus.com/iU9RmdZ5rDWuw.jpg"/>
+		    		<p class="ct2">
+		    		一年一度的輔大資工週美少女活動正式開跑囉！！！</br>
+					不僅有眾多3C產品展售、尋寶活動、試手氣抽平板電腦等大獎外，眾所期待的「資工美少女」又來啦！只要在投票活動期間為我們投下您寶貴的一票，您就有機會讓自己支持的水水榮登"資工美少女"的寶座唷！</br>
+					</br>
+					“飛上資頭變美女- 資工週美少女” 將與各3C廠商品牌合作，</br>
+					讓每一位青春美麗的女孩展現出各自亮麗的風采，</br>
+					贏取在鎂光燈下為3C產品代言的機會。</br>
+					我們需要您珍貴的一票，為我們選出最適合的代言人！</br>
+					</br>
+					詳情請上 飛上資頭變美女 - 2013 輔大資工週美少女 </br>
+					FACKBOOK粉絲專頁:<a href="https://www.facebook.com/2013FjuCsieBeauties">https://www.facebook.com/2013FjuCsieBeauties</a>
+		    		</p>
+	    		</div>
+	    		<div class="visual toScroll" id="intro"></div> <!--#intro-->
+	    	</section>
+	    	<section class="history toScroll" >
+	    		<h3 class="ct1">★資工週美少女歷史★</h3>
+	    		<p class="ct2">
+	    		俗話說:「輔大有三寶:美女、菠蘿、冰淇淋」。素聞輔大美女遍地皆是，我們希望可以藉由此，萬中挑選出佼佼者---資工美少女。</br>
+				</br>
+				輔大資工系舉辦的「資工美少女」網路票選活動已行之有年，我們不僅選拔輔仁大學出類拔萃的校園美女，更藉此將資訊業界最新消息推廣給全校師生。</br>
+				</br>
+				資工美少女在輔大向來非常具有代表性。2011年，因應輔仁大學在台復校五十周年校慶，出版的美少女年曆，幾乎全被資工美少女們囊括；知名藝人周采詩更是第四屆輔大資工美少女得主。</br>
+				</br>
+				參加資工美少女選拔，評分標準並不僅止於外貌；我們也注重涵養氣質、臨場反應、台風、人際關係、資訊產業認知程度等特質，務求找出才貌兼備的資工美少女。
+	    		</p>
+	    		<div class="visual toScroll" id="second"></div>
+	    	</section>
+	    	<section class="desctiption toScroll">
+	    		<h3 class="ct1">★投票辦法★</h3>
+	    		<div class="texts">
+	    		<img id="desc_pic" src="http://i.minus.com/it98LQb4y6Bvt.jpg"/>
+	    		<p class="ct2">
+	    		</br>資工美少女人氣票選活動，正式啟動。</br></br>這次將採取兩階段同步投票</br>線上人氣與現場人氣各佔50%唷！</br></br>線上的部分，只要在5/23前，邀請你的左鄰右舍在網頁一同幫你支持的美少女點擊投票，就有可能成為關鍵性的一票！</br></br>而現場活動將在5/20~5/24每天的中午12:10~13:30進行，</br>只要在5/20~5/23到投票現場，就可以幫您所支持的美少女增加寶貴的一票喔！</br>資工美少女將在5/24出爐，現場一同抽出眾多好禮，回饋給投票的觀眾唷。</br></br>快快邀請您的親朋好友，一同到風華廣場，就可以投票幫你所支持的美少女增加勝利的機會唷！</br></br>為了感謝您投下珍貴的一票，我們特別準備了許多回饋活動。3C一元競標活動，有趣好玩的尋寶活動，當然還有美少女們的才藝舞台秀。除此之外，還有摸彩抽平板電腦等大獎。只要您每天來投下您寶貴的一票，即可獲得一張彩券，總價值20000以上的大獎就有機會是屬於您的喔！</br></br>*現場將有領票處 即可再領票處每天領去一張選票及一張摸彩券唷 (全勤就有4倍機會!!) 記得攜帶您的學生證</br></br></br>快加入我們的粉絲團「飛上資頭變美女 - 2013 輔大資工週美少女」，幫幫美少女們衝人氣！</br></br><a href="https://www.facebook.com/2013FjuCsieBeauties">https://www.facebook.com/2013FjuCsieBeauties</a></br></br>詳情請洽 輔大資工週美少女官方粉絲頁</br>趕快按個「讚」加入我們，隨時給你最新消息！
+	    		</div>
+	    		<div class="visual toScroll" id="third"></div>
+	    	</section>
+	    	<section class="sponsors toScroll">
+	    		<h3 class="ct1">★贊助商★</h3>
+	    		<div class="sponsor_list">
+		    		<h4 class="ct1">公司企業：</h4>
+					<div class="sponsor">
+						<img src="http://i.minus.com/ibn813Appo0cpa.png"></img>
+						<div class="detail">
+							<h2>NOVA 台北店</h2>
+							<p>全國連鎖之電腦專業優質賣場。</p>
+							<a class="btn btn-danger" href="http://www.nova.com.tw/shop/store_info.php?mall_no=4">網頁</a>
+						</div>
+					</div>
+					<div class="sponsor">
+						<img src="http://i.minus.com/iXa28pOBx8hYZ.png"></img>
+						<div class="detail">
+							<h2>Mozilla Taiwan</h2>
+							<p>捍衛網路自由的瀏覽器公司。</p>
+							<a class="btn btn-danger" href="http://mozilla.com.tw/">網頁</a>
+						</div>
+					</div>
+					<div class="sponsor">
+						<img src="http://i1.minus.com/jbdnwl276BbG0e.png"></img>
+						<div class="detail">
+							<h2>GIGABYTE</h2>
+							<p>顯示卡、主機板產品創新的領導者。</p>
+							<a class="btn btn-danger" href="http://www.gigabyte.tw/">網頁</a>
+						</div>
+					</div>
+					<div class="sponsor">
+						<img src="http://i.minus.com/ixZIdvr7sn26G.png"></img>
+						<div class="detail">
+							<h2>Garena</h2>
+							<p>眾多熱門遊戲的代理商。</p>
+							<a class="btn btn-danger" href="http://www.garena.tw/index/index.php">網頁</a>
+						</div>
+					</div>
+					<div class="sponsor">
+						<img src="http://i.minus.com/icnfSwJCGPwZc.png"></img>
+						<div class="detail">
+							<h2>acer</h2>
+							<p>國際硬體大廠。</p>
+							<a class="btn btn-danger" href="http://www.acer.com.tw/">網頁</a>
+						</div>
+					</div>
+					<div class="sponsor">
+						<img src="http://i.minus.com/iemL0I2iv60Ar.png"></img>
+						<div class="detail">
+							<h2>SanDisk</h2>
+							<p>儲存裝置最大廠。</p>
+							<a class="btn btn-danger" href="http://www.ubisoft.com.tw/">網頁</a>
+						</div>
+					</div>
+					<div class="sponsor">
+						<img src="http://i.minus.com/id3ty1lukIk4D.png"></img>
+						<div class="detail">
+							<h2>LINE</h2>
+							<p>最多可愛貼圖的免費通訊APP。</p>
+							<a class="btn btn-danger" href="http://line.naver.jp/zh-hant/">網頁</a>
+						</div>
+					</div>
+					<div class="sponsor">
+						<img src="http://i.minus.com/ibsu4VXFkikxkY.png"></img>
+						<div class="detail">
+							<h2>UBISOFT</h2>
+							<p>眾多熱門遊戲的開發公司。</p>
+							<a class="btn btn-danger" href="http://www.ubisoft.com.tw/">網頁</a>
+						</div>
+					</div>
+					<div class="sponsor">
+						<img src="http://i.minus.com/ibtZ0ZZ9pjAVhI.png"></img>
+						<div class="detail">
+							<h2>美人時計 台灣</h2>
+							<p>每時每分提供你不同的正妹。</p>
+							<a class="btn btn-danger" href="http://taiwan.bijint.com/">網頁</a>
+						</div>
+					</div>
+					<div class="sponsor">
+						<img src="http://i.minus.com/ibnCOG5TRnLTpr.png"></img>
+						<div class="detail">
+							<h2>Phottix</h2>
+							<p>專業的攝影器材公司。</p>
+							<a class="btn btn-danger" href="http://www.phottix.com/">網頁</a>
+						</div>
+					</div>
+					<div class="sponsor">
+						<img src="http://i.minus.com/iHl23DJkn8vBn.png"></img>
+						<div class="detail">
+							<h2>麥當勞<small>泰山明志店</small></h2>
+							<p>好吃好玩服務又一級棒的麥當勞。</p>
+							<a class="btn btn-danger" href="http://www.mcdonalds.com.tw/">網頁</a>
+						</div>
+					</div>
+					<div class="sponsor">
+						<img src="http://i.minus.com/il5KCoX5ul9je.png"></img>
+						<div class="detail">
+							<h2>天瓏書局</h2>
+							<p>最多最齊全的電腦書店。</p>
+							<a class="btn btn-danger" href="http://www.tenlong.com.tw/">網頁</a>
+						</div>
+					</div>
+					<div class="sponsor">
+						<img src="http://i.minus.com/ibq8P7QGgNfCTh.png"></img>
+						<div class="detail">
+							<h2>惠盟</h2>
+							<p>在輔大輔園旁邊最溫馨的3C產品書局。</p>
+							<a class="btn btn-danger" href="http://www.welltouch.com.tw/">網頁</a>
+						</div>
+					</div>
+					<div class="sponsor">
+						<img src="http://i.minus.com/ighdz5MGw268e.png"></img>
+						<div class="detail">
+							<h2>5 Studio</h2>
+							<p>新莊區婚紗店。</p>
+							<a class="btn btn-danger" href="https://www.facebook.com/5studioJinCaiSheYing">網頁</a>
+						</div>
+					</div>
+				</div>
+				<div class="sponsor_list">
+					<h4 class="ct1">個人：</h4>
+					<div class="sponsor">
+						<img src="http://i.minus.com/ibzsqAjm3MXPMB.png"></img>
+						<div class="detail">
+							<h2>LOVE+ 咪兔 </br> Mi Two</h2>
+							<p>性感可愛的SG. Dancer姊妹團。</p>
+							<a class="btn btn-danger" href="https://www.facebook.com/LoveMiTwo?fref=ts">粉絲頁</a>
+						</div>
+					</div>
+					<div class="sponsor">
+						<img src="http://i.minus.com/i4HAxcJfEUuJm.png"></img>
+						<div class="detail">
+							<h2>動感天王 </br> 李威</h2>
+							<p>補教名師兼動感歌手。</p>
+							<a class="btn btn-danger" href="https://www.facebook.com/kingliliwei">粉絲頁</a>
+						</div>
+					</div>
+				</div>
+	    	</section>
+	    </div>
+		<section class="notices">
+    		★注意事項★</br>
+    		<small>
+					活動時間：</br>
+					(a)美少女網路人氣初選投票： 4/5~4/26 </br>
+					(b)網路人氣結果公布於粉絲團: 4/27</br>
+					(c)美少女前15名面試日期： 4/29~5/10</br>
+					(d)美少女前前6網路複賽投票： 5/13~5/24</br>
+					(e)資工週現場活動日期： 5/20~5/24</br>
+					</br>
+					主辦單位資工系學會有權修改活動內容。</br>
+					詳情請上官方粉絲專業 https://www.facebook.com/2013FjuCsieBeauties</br>
+					或聯絡總召 李威廷 0939545917</br>
+
+			</small>
+			</br>
+		</section>
+	    <div class="footer toScroll">
+	    	<div class="pattern"></div>
+	    	<p>made by FJU CSIE, Copyright c 2013 All rights reserved. </p>
+	    </div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.scrollTo-1.4.3.1.min.js"></script>
+	<script src="js/jquery.parallax-1.1.3.js"></script>
+	<script src="js/jquery.imagesloaded.min.js"></script>
+	<script src="js/jquery.masonry.min.js"></script>
+	<script src="js/swipe.js"></script>
+	<script type="text/javascript">window.jfAsyncInit=function(){jf.main({'appId':'7f84d654JK1fyzDWpa6KIa-W_rxqoJvQoy8oz9AyDxZ4kdnlNafGLcN1uGaC5fxyizMXdBCo0K3vVsOLpJq80-usAkJFmg62qqcW689wSGswVwBgPKrumiKoJdXeygAMCcRvyOAdUR13sx3DaMbtI_6RPHpsxjnZmFUOKc-CwTrmEaHioTk=','p':'8775','font':{'wt005':{'css':{'0':'.ct2'}},'wt011':{'css':{'0':'.ct1'}},'xingothic-tc-w4':{'css':{'0':'.xingothic-tc-w4','1':'.ct3'},'alias':'xingothic-tc-w4'},'xingothic-tc-w8':{'css':{'0':'.xingothic-tc-w8','1':'.pic_menu > p ×'},'alias':'xingothic-tc-w8'},'datm8':{'css':{'0':'.datm8','1':'sponsors'},'alias':'datm8'}}})};(function(){var c={'scriptTimeout':3000};var h=document.getElementsByTagName("html")[0];h.className+=" jf-loading";var e=setTimeout(function(){h.className=h.className.replace(/(\s|^)jf-loading(\s|$)/g," ");h.className+=" jf-inactive"},c.scriptTimeout);var jfscript=document.createElement("script");var d=false;jfscript.type="text/javascript";jfscript.async=true;jfscript.src='http://ds.justfont.com/js/stable/v/1.13/';jfscript.onload=jfscript.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded"){return}d=true;clearTimeout(e)};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(jfscript,s)})();</script>
+	<script type="text/javascript">var voted = true; var votedto = -1;</script>
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>

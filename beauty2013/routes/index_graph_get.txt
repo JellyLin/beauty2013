@@ -1,0 +1,39 @@
+mongoose.connect('mongodb://stu.csie.fju.edu.tw/beauty2013');
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function callback () {
+  console.log("Mongodb log in successfully.")
+});
+var VoteSchema = mongoose.Schema({
+	id: Number,
+	votefor : Number
+});
+var votes = db.model('votes', VoteSchema);
+
+graph.get("me", function(err, FBres) {
+
+  		var data = [];
+		var FB_ID = FBres.id;		
+		votes.find({ id: FB_ID }, function (err, result) {
+		if (err) { console.log('錯誤'+err) };
+	    if (!result) {
+		//		 2.把投票寫到DB
+			var Newvote = new Votefor({ id: FB_ID, votefor: req.params.id });
+			Newvote.save();
+			console.log('done: '+ FB_ID+'投票給'+req.params.id+'號');
+			res.send('done: '+ FB_ID+'投票給'+req.params.id+'號');
+		}
+		else {
+		//todo:  1.檢查是否投過票
+		  result.forEach(function (user) {
+		    console.log('你已經投給'+user.votefor+'號');
+		  });
+		}
+		});
+		// 1號票數
+		// votes.count({votefor: 1})
+		//res.redirect("http://stu.csie.fju.edu.tw/beauty/2013/");
+	});
+	
+	
+	
